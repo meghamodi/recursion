@@ -33,6 +33,29 @@ def fib(n):
         return 1
     else:
         return fib(n-1) +fib(n-2)
-        
+     
+Q4. Write a function that takes in a base and an exp and recursively computes baseexp. You are not allowed to
+use the ** operator!
+
+def bmul(base,exp):
+    if exp == 0:
+        return 1
+    else:
+        return base * bmul(base,exp-1)
+
+Q5. Write a function using recursion to print numbers from n to 0.
+
+def mn(n):
+    if n ==0:
+        return 0
+    print(n)
+    return mn(n-1)
+    
+ Q6. Write a function using recursion to print numbers from 0 to n.
+ 
+ def incre_up(n):
+    if n != 0:
+        incre_up(n - 1)
+    print(n)
 
         
